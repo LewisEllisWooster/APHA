@@ -37,7 +37,7 @@ BOT1.profile
 
 
 
-while BOT1.likes_remaining>100:
+while BOT1.likes_remaining>0:
 	try:
 		users = BOT1.nearby_users() #.nearby_users() object contains methods
 					    #for gender, age
@@ -66,13 +66,13 @@ Method 2 -
 str(len(BOT1._api.matches())) + ' matches')
 matches = BOT1._api.matches()
 for m in matches:
-	message(m)
+	print m["messages"]
 
 
 
 #prints out messages
-for m in matches:
-	print m["messages"]
+#for m in matches:
+	
 
 
 
