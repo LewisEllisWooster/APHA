@@ -13,7 +13,7 @@ BOT1 = pynder.Session(FBID,FACEBOOK_TOKEN)
 
 #################################3
 #spits JSON script
-with likes
+#with likes
 
 
 for usr in BOT1.nearby_users():
@@ -70,7 +70,9 @@ for m in matches:
 
 
 
-
+#prints out messages
+for m in matches:
+	print m["messages"]
 
 
 
