@@ -17,7 +17,13 @@ for usr in session.nearby_users():
 
 ####################################
 
-
 #names of nearby users
 print session.nearby_users():
+
+######################################
+#gives profile name of bot usr
+session.profile
+
+#change location of usr
+session.update_location("23.9277432","2.7591924")
 
